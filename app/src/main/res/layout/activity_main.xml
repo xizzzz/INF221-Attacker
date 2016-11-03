@@ -39,4 +39,14 @@
             android:onClick="SendSMS" />
     </LinearLayout>
 
+    <Button
+        android:text="Start Alarm Clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/alarm"
+        android:textSize="14sp"
+        android:onClick="startAlarm" />
+
 </RelativeLayout>

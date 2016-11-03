@@ -1,5 +1,8 @@
 package edu.uci.seal.attacker;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,5 +27,13 @@ public class MainActivity extends AppCompatActivity {
       //  i.setPackage(this.getPackageName());
         Log.d("send", "send sms");
         startService(i);
+    }
+
+    public void startAlarm(View v) {
+        long alarmid = 1;
+        Intent i = new Intent("com.xi.TRIGGER_ALARM");
+        i.putExtra("alarm_id", alarmid);
+        Log.d("alarm", "send alarm");
+        sendBroadcast(i);
     }
 }

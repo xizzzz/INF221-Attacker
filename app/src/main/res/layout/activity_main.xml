@@ -19,10 +19,22 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="phoneNumber"
+            android:text="" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DOS Attack"
+            android:text="SEND MESSAGE"
             android:id="@+id/dosBtn"
             android:onClick="SendSMS" />
     </LinearLayout>

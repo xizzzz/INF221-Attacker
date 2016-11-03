@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SendSMS(View v) {
         Intent i = new Intent("com.example.android.directshare.SEND_SMS");
-        String phoneNumber = "9492476107";
+        String phoneNumber = ((EditText)findViewById(R.id.editText)).getText().toString();
         String msg = "testing message";
         i.putExtra("PHONE_NUMBER", phoneNumber);
         i.putExtra("TEXT_MSG", msg);
